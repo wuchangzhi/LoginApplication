@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:text="@string/username_reg"/>
+
+            <EditText
+                android:id="@+id/username_reg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:padding="5dp"
+                android:background="@drawable/edittext_bg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:text="@string/password_reg"/>
+
+            <EditText
+                android:id="@+id/password_reg"
+                android:inputType="numberPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:padding="5dp"
+                android:background="@drawable/edittext_bg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:text="@string/confirm_passwd_reg"/>
+
+            <EditText
+                android:id="@+id/confirm_passwd_reg"
+                android:inputType="numberPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:padding="5dp"
+                android:background="@drawable/edittext_bg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:text="@string/email_reg"/>
+
+            <EditText
+                android:id="@+id/email_reg"
+                android:layout_width="0dp"
+                android:inputType="textEmailAddress"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:padding="5dp"
+                android:background="@drawable/edittext_bg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:text="@string/birth_reg"/>
+
+            <EditText
+                android:id="@+id/birth_reg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:padding="5dp"
+                android:background="@drawable/edittext_bg"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/register"
+            android:layout_marginTop="10dp"
+            android:onClick="register"
+            />
+    </LinearLayout>
+</ScrollView>
